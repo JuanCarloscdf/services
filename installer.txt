@@ -1,0 +1,30 @@
+sudo apt-get update
+wget https://get.docker.com/
+sudo mv index.html install_docker.sh
+sudo chmod 777 install_docker.sh
+sudo ./install_docker.sh
+sudo rm install_docker.sh
+sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo git clone https://github.com/JuanCarloscdf/services.git
+//sudo mv ioticos_god_level_services ioticos
+cd services
+
+// WARNING .ENV
+
+sudo docker-compose -f docker-compose-production.yml up
+
+sudo git clone https://github.com/ioticos/ioticos_god_level_app.git
+sudo mv ioticos_god_level_app  app
+
+
+
+
+
+
+
+
+
+
+
+sudo usermod -aG docker ubuntu
