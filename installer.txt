@@ -17,7 +17,7 @@ cd services
 
 sudo docker-compose -f docker-compose-production.yml up
 
-sudo git clone https://github.com/ioticos/ioticos_god_level_app.git
+sudo git clone https://github.com/JuanCarloscdf/app.git
 sudo mv ioticos_god_level_app  app
 
 
